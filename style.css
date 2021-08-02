@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous|Courgette&display=swap');
+body{
+    font-family: 'Righteous', cursive;
+    background: #dfe6e9;
+    font-size: 110px; 
+}
+
+.container {
+    text-align: center;
+    display: block;
+    padding-top: 0px;
+}
+
+.container h6 { 
+    color: #34ace0;
+    
+    
+}
+#title { 
+    color: #2C3A47; 
+    font-size: 50px;
+}
+
+.animate-text {
+    margin-top: -190px;
+    margin-left: 100px;
+}
+.animate-text span {
+    font-family: 'Courgette', cursive; 
+    font-size: 40px;
+    color: #cc8e35; 
+    
+}
+
+.animate-text span:nth-child(2) { animation-delay: 2s; }
+.animate-text span:nth-child(3) { animation-delay: 4s; }
+.animate-text span:nth-child(4) { animation-delay: 6s; }
+.animate-text span:nth-child(5) { animation-delay: 8s; }
+
+.animate-text span {
+    position: absolute;
+    opacity: 0;
+    overflow: hidden;
+    animation: animate 10s linear infinite 0s;
+}
+
+@-webkit-keyframes animate {
+    0%  { opacity: 0; }
+    2%  { opacity: 0; -webkit-transform: translateY(-30px); }
+    5%  { opacity: 1; -webkit-transform: translateY(0px); }
+    17% { opacity: 1; -webkit-transform: translateY(0px); }
+    20% { opacity: 0; -webkit-transform: translateY(30px); }
+}
